@@ -1,0 +1,120 @@
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", "Roboto", "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 340px;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4f3ca7;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.password-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.password-input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  background: #f7f7fa;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.copy-btn {
+  padding: 0 1.2rem;
+  background: #6c47e6;
+  color: #fff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.copy-btn:hover {
+  background: #4f3ca7;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #444;
+  gap: 0.7rem;
+}
+
+.slider {
+  margin-left: 1rem;
+  accent-color: #6c47e6;
+}
+
+.length-value {
+  font-weight: 600;
+  color: #6c47e6;
+  margin: 0 0.5rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 0.95rem;
+  text-align: center;
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .card {
+    min-width: 90vw;
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .password-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .password-input,
+  .copy-btn {
+    border-radius: 8px;
+  }
+}
